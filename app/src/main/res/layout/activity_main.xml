@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF7DD"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="153dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="#DE8585"
+        android:text="STOP"
+        android:textColor="#955353"
+        android:textColorLink="#F80404"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTrafienia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/licznik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginBottom="266dp"
+        android:text="0"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTrafienia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="151dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="130dp"
+        android:backgroundTint="#A2DCA7"
+        android:text="START"
+        android:textColor="#345B0D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTrafienia"
+        app:layout_constraintEnd_toStartOf="@+id/btnStop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtKomunikat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="491dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="221dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTrafienia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="171dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="152dp"
+        android:text="Trafienia: 0"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
